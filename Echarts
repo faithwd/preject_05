@@ -1,0 +1,40 @@
+数据可视化的主要目的：借助于图形化手段，清晰传达与沟通信息
+数据可视化在互联网公司经常用于通用数据表，移动端图表，大屏可视化，图编辑
+重点学习ECharts
+数据可视化项目：项目展示，项目目的，学习阶段：为学习服务器编程做铺垫，市场需求
+数据可视化学到的技术：
+      css动画，渐变,jQuery库+原生javaScript,flex布局和rem适配方案
+      图片边框和border-image,ECharts
+ECharts js可视化库，底层依赖于矢量图形库ZRender，提供直观，交互丰富，可高度个性化定制的数据可视化图表。
+开源免费 
+官网地址:https://echarts.apache.org/zh/index.html
+可以满足大多数可视化图标实现，使用方便，功能强大，是实现数据可视化的最优选择
+基本使用：引入echarts.js文件
+         准备dom容器
+         初始化echarts实例对象
+         指定配置项和数据
+         将配置设置项给echarts实例对象
+相关配置讲解：
+title:标题组件
+tooltip:提示框组件
+legend:图例组件
+toolbox:工具栏
+grid:直角坐标内绘制网络 其中containLable可以隐藏
+xAxis:直角坐标系grid中的x轴
+yAxix:直角坐标系grid中的y轴
+series:系列列表，每个系列通过type决定自己的图表 数组决定线的个数
+       type:"line" 图表类型 line是折线图
+       name:系列名称，用于tooltip的显示，legend的图筛选你变化
+       stack:数据堆叠，如果设置相同的值，则数据会堆叠
+       数据堆叠：第二个数据=第一个数据+第二个数据...
+                第三个数据=第二个数据+第三个数据 
+                如果给stack指定不同的值或者去掉这个属性则不会发生数据堆叠
+       data:数据
+color:调色盘颜色列表
+
+边框图片 盒子大小不一，边框样式相同 border-image
+九宫格把四个角切除 上右下左
+语法：border-image-soure:用在边框的路径
+     border-image-slice:图片边框向内偏移
+     border-image-width:图片边框的宽度需要单位
+     border-image-repeat:图像边框是否铺平，铺满或拉伸
